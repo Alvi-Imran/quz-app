@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+
+:root {
+    --gradint: linear-gradient(90deg, #9BAFD9, #103783);
+}
+
+body {
+    background-color: #fff;
+    font-family: "Sonsie One", system-ui;
+
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    background-color: #010201;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #3BC9F3;
+}
+
+#game {
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0;
+}
+
+.cover {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+
+.game-box {
+    width: 200px;
+    height: 170px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f89b43;
+    box-shadow: 0 20px 15px rgba(37, 36, 36, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.game-box p {
+    font-weight: 600;
+}
+
+.game-box:hover {
+    color: #103783;
+}
+
+.game-box * {
+    position: relative;
+    z-index: 2;
+    /* content always top */
+}
+
+.game-box::after {
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    /* background-color: #abb5c9; */
+    background-color: #3BC9F3;
+    z-index: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+.game-box:hover:after {
+    width: 200px;
+    height: 170px;
+    border-radius: 15px;
+    /* z-index: 0; */
+}
+
+.game-box h3 {
+    font-size: 1.2rem;
+}
+
+.game-box button {
+    width: 80px;
+    height: 35px;
+    border: none;
+    background-color: #a9b5cc;
+    box-shadow: 3px 5px 3px #22222273, inset 0px 3px 5px #f1f0f0;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.game-box button:hover {
+    box-shadow: 3px 3px 3px #22222273, inset 0px 3px 3px #f1f0f0;
+}
+
+/* play game box css */
+#play-box {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    /* background-image: linear-gradient(30deg, #5dcea8, #d1f8b2); */
+}
+
+.qus,
+.opstion,
+.play-btn {
+    padding: 10px;
+}
+
+.play-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2a74ff;
+}
+
+.play-btn button {
+    width: 80px;
+    height: 30px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
