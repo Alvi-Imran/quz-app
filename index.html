@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz-game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -30,7 +32,7 @@
             <div class="game-box">
                 <h3>CSS</h3>
                 <p>CSS 10 questions</p>
-                <button>Play</button>
+                <button >Play</button>
             </div>
             <div class="game-box">
                 <h3>JAVASCRIPT</h3>
@@ -39,24 +41,28 @@
             </div>
         </div>
         <div id="play-box">
-            <div class="qus">
-                <h3 id="q">Q1 How are you?</h3>
-                <p id="demo">demo</p>
+            <div id="play-cover">
+                <div class="qus">
+                    <h3 id="q">Q1 How are you?</h3>
+                    <p id="demo"></p>
+                </div>
+                <div class="opstion">
+                    <input type="radio" name="option_ans" id="a"><label for="a" id="a1" value=""></label><br><br>
+                    <input type="radio" name="option_ans" id="b"><label for="b" id="b1" value=""></label><br><br>
+                    <input type="radio" name="option_ans" id="c"><label for="c" id="c1" value=""></label><br><br>
+                    <input type="radio" name="option_ans" id="d"><label for="d" id="d1" value=""></label>
+                </div>
             </div>
-            <div class="opstion">
-                <input type="radio" name="option_ans" id="a"><label for="a" id="a1" value=""></label><br><br>
-                <input type="radio" name="option_ans" id="b"><label for="b" id="b1" value=""></label><br><br>
-                <input type="radio" name="option_ans" id="c"><label for="c" id="c1" value=""></label><br><br>
-                <input type="radio" name="option_ans" id="d"><label for="d" id="d1" value=""></label>
-            </div>
-            <div class="play-btn">
-                <button>Exit</button>
-                <button onclick="sub()">Submit</button>
-            </div>
+                <div id="result"></div>
+                <div class="play-btn">
+                    <button onclick="exit()">Exit</button>
+                    <button onclick="sub()">Submit</button>
+                </div>
         </div>
     </div>
-    
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
