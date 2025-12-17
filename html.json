@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "q": "What is the correct syntax to write an HTML comment?",
+        "demo":"",
+        "a": "<!-- comment -->",
+        "b": "// comment",
+        "c": "# comment",
+        "d": "/* comment */",
+        "ans": "A"
+    },
+    {
+        "id": 2,
+        "q": "What is the effect of the <b> tag?",
+        "demo":"",
+        "a": "It convert the text within it to bold font.",
+        "b": "It is used to write black-colored font.",
+        "c": "It is used to change the font size.",
+        "d": "None of the above.",
+        "ans": "B"
+    },
+    {
+        "id": 3,
+        "q": "What is the function of the HTML style attribute?",
+        "demo":"",
+        "a": "It is used to add style to an HTML element.",
+        "b": "It is used to uniquely identify some specific styles of some element.",
+        "c": "Both A and B.",
+        "d": "None of the above.",
+        "ans": "A"
+    },
+    {
+        "id": 4,
+        "q": "What is the select tag used for?",
+        "demo":"",
+        "a": "Creates a combo box.",
+        "b": "Select some attirbutes and change their style.",
+        "c": "Change text font.",
+        "d": "None of the above.",
+        "ans": "A"
+    },
+    {
+        "id": 5,
+        "q": "What is the smallest header in HTML by default?",
+        "demo":"",
+        "a": "h1.",
+        "b": "h2.",
+        "c": "h6.",
+        "d": "h4.",
+        "ans": "C"
+    },
+    {
+        "id": 6,
+        "q": "What tag is used to render an image on a webpage?",
+        "demo":"",
+        "a": "img",
+        "b": "src.",
+        "c": "image",
+        "d": "None of the above.",
+        "ans": "A"
+    },
+    {
+        "id": 7,
+        "q": "Which attribute is used to provide a unique name to an HTML element?",
+        "demo":"",
+        "a": "id",
+        "b": "class",
+        "c": "type",
+        "d": "None of the above.",
+        "ans": "A"
+    },
+    {
+        "id": 8,
+        "q": "Which HTML tag is used to set up a Javascript-like client-side scripting language?",
+        "demo":"",
+        "a": "<script>",
+        "b": "<select>",
+        "c": "<anchor>",
+        "d": "None of the above.",
+        "ans": "A"
+    },
+    {
+        "id": 9,
+        "q": "Which of the following are examples of block-level elements in HTML?",
+        "demo":"",
+        "a": "<div>",
+        "b": "<p>",
+        "c": "<h1>",
+        "d": "All of the above.",
+        "ans": "D"
+    },
+    {
+        "id": 10,
+        "q": "Which of the following is the correct syntax for using the HTML style attribute?",
+        "demo":"",
+        "a": "<tagname style='property:value'>",
+        "b": "<p style='property;'>",
+        "c": "<tagname style>",
+        "d": "None of the above.",
+        "ans": "A"
+    }
+]

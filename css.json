@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "q": "The full form of CSS is:",
+        "demo": "",
+        "a": "Cascading Style Sheets",
+        "b": "Coloured Special Sheets",
+        "c": "Color and Style Sheets",
+        "d": "None of the above",
+        "ans": "A"
+    },
+    {
+        "id": 2,
+        "q": "How can we change the background color of an element?",
+        "demo": "",
+        "a": "background-color",
+        "b": "color",
+        "c": "Both A and B",
+        "d": "None of the above",
+        "ans": "A"
+    },
+    {
+        "id": 3,
+        "q": "How can we change the text color of an element?",
+        "demo": "",
+        "a": "background-color",
+        "b": "color",
+        "c": "Both A and B",
+        "d": "None of the above",
+        "ans": "B"
+    },
+    {
+        "id": 4,
+        "q": "In how many ways can CSS be written in?",
+        "demo": "",
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4",
+        "ans": "C"
+    },
+    {
+        "id": 5,
+        "q": "What type of CSS is the following code snippet?",
+        "demo": "<h1 style=\"color:blue;\">A Blue Heading</h1>",
+        "a": "Inline",
+        "b": "Internal",
+        "c": "External",
+        "d": "None of the above",
+        "ans": "A"
+    },
+    {
+        "id": 6,
+        "q": "What type of CSS is generally recommended for designing large web pages?",
+        "demo": "",
+        "a": "Inline",
+        "b": "Internal",
+        "c": "External",
+        "d": "None of the above",
+        "ans": "C"
+    },
+    {
+        "id": 7,
+        "q": "Which HTML tag is used to declare internal CSS?",
+        "demo": "",
+        "a": "<style>",
+        "b": "<link>",
+        "c": "<script>",
+        "d": "None of the above",
+        "ans": "A"
+    },
+    {
+        "id": 8,
+        "q": "How can we select an element with a specific ID in CSS?",
+        "demo": "",
+        "a": "#",
+        "b": ".",
+        "c": "^",
+        "d": "None of the above",
+        "ans": "A"
+    },
+    {
+        "id": 9,
+        "q": "How can we select an element with a specific Class in CSS?",
+        "demo": "",
+        "a": "#",
+        "b": ".",
+        "c": "^",
+        "d": "None of the above",
+        "ans": "B"
+    },
+    {
+        "id": 10,
+        "q": "How can we write comments in CSS?",
+        "demo": "",
+        "a": "/* */",
+        "b": "//",
+        "c": "#",
+        "d": "All of the above",
+        "ans": "A"
+    }
+]
