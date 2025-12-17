@@ -10,24 +10,63 @@ let d = document.querySelector("#d1");
 let displayResult = document.getElementById("result");
 
 
-let storeData = [];
-let count = 0;
-let score = 0;
-let getAns = "";
+let storeData = []; // store data for APIs
+let count = 0; // like index 
+let score = 0; // result score
+let getAns = ""; // store Anwer
 
-function js() {
+function control() {
     cover.style.display = "none";
     playBox.style.display = "flex";
     playCover.style.display = "block";
-
-    playBox.style.width = "70%";
-    playBox.style.height = "50vh";
 
     count = 0;
     score = 0;
     getAns = "";
 
-    fetch("data.json")
+}
+
+function gk(){
+    control()
+
+    fetch("gk.json")
+    .then(response => response.json())
+    .then(data => {
+        storeData = data;
+        showques()
+    })
+    .catch(error => alert("error " + error));
+}
+
+function html(){
+    control()
+
+    fetch("html.json")
+    .then(response => response.json())
+    .then(data => {
+        storeData = data;
+        showques();
+    })
+    .catch(error => alert("error " + error))
+}
+
+function css(){
+    control()
+
+    fetch("css.json")
+    .then(response => response.json())
+    .then(data => {
+        storeData = data;
+        showques();
+    })
+    .catch(error => alert("error " + error))
+}
+
+
+function js() {
+    control();
+
+    fetch("javascript.json")
         .then(response => response.json())
         .then(data => {
             storeData = data;
@@ -38,20 +77,20 @@ function js() {
 
 // show question function 
 function showques() {
-      storeData.forEach((el, ind) => {
-        if (ind == count) {
+    storeData.forEach((el, ind) => {
+        if (ind == count) {           
             q.innerHTML = `Q${el.id} ${el.q}<br>`;
-            if(el.demo == ""){
-                demo.innerHTML = "";
-            }else{
+            if (el.demo == "") {
+                demo.textContent = "";
+            } else {
                 demo.style.opacity = 0.7;
                 demo.style.paddingTop = "10px";
-                demo.innerHTML = `Demo: ${el.demo}`
+                demo.textContent = `Demo: ${el.demo}`
             }
-            a.innerHTML = ` (A) ${el.a};`;
-            b.innerHTML = ` (B) ${el.b};`;
-            c.innerHTML = ` (C) ${el.c};`;
-            d.innerHTML = ` (D) ${el.d};`;
+            a.textContent = ` (A) ${el.a};`;
+            b.textContent = ` (B) ${el.b};`;
+            c.textContent = ` (C) ${el.c};`;
+            d.textContent = ` (D) ${el.d};`;
             getAns += `${el.ans}`
         }
     })
@@ -77,19 +116,16 @@ function showResult() {
     let ch = checkinput();
     if (ch === getAns) {
         score++
-        console.log(score);
     }
 }
 
 function result() {
+    playCover.style.display = "none";
     playBox.style.width = "30%";
     playBox.style.height = "30vh";
-    playCover.style.display = "none";
     displayResult.style.display = "block";
-    displayResult.innerHTML = `<h2>your score is <span id="score">${score}</span>😢</h2>`
+    displayResult.innerHTML = `<h2>your score is <span id="score">${score}</span></h2>`
 }
-
-
 
 // submit function
 function sub() {
@@ -109,7 +145,7 @@ function sub() {
 function exit() {
     cover.style.display = "flex";
     playBox.style.display = "none";
-    displayResult.style.display = "none"
+    displayResult.style.display = "none";
 
     score = 0;
     count = 0;
