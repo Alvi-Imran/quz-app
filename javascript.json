@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "q": "What is JavaScript?",
+        "demo":"",
+        "a": "JavaScript is a scripting language used to make the website interactive",
+        "b": "JavaScript is an assembly language used to make the website interactive",
+        "c": "JavaScript is a compiled language used to make the website interactive",
+        "d": "None of the mentioned",
+        "ans": "A"
+    },
+    {
+        "id": 2,
+        "q": "Which of the following is correct about JavaScript?",
+        "demo":"",
+        "a": "JavaScript is an Object-Based language",
+        "b": "JavaScript is Assembly-language",
+        "c": "JavaScript is an Object-Oriented language",
+        "d": "JavaScript is a High-level language",
+        "ans": "A"
+    },
+    {
+        "id": 3,
+        "q": "Among the given statements, which statement defines closures in JavaScript?",
+        "demo":"",
+        "a": "JavaScript is a function that is enclosed with references to its inner function scope",
+        "b": "JavaScript is a function that is enclosed with references to its lexical environment",
+        "c": "JavaScript is a function that is enclosed with the object to its inner function scope",
+        "d": "None of the mentioned",
+        "ans": "B"
+    },
+    {
+        "id": 4,
+        "q": "What will be the output of the following JavaScript code?",
+        "demo": "var js = 10; js *= 5; document.getElementById('demo').innerHTML = js;",
+        "a": 10,
+        "b": 50,
+        "c": 5,
+        "d": "Error",
+        "ans": "B"
+    },
+    {
+        "id": 5,
+        "q": "Arrays in JavaScript are defined by which of the following statements?",
+        "demo":"",
+        "a": "It is an ordered list of values",
+        "b": "It is an ordered list of objects",
+        "c": "It is an ordered list of string",
+        "d": "It is an ordered list of functions",
+        "ans": "A"
+    },
+    {
+        "id": 6,
+        "q": "What will be the output of the following JavaScript code?",
+        "demo": "function compare(){let a=2; let b=2.0; if(a==b)  return true; else return false;}",
+        "a":"false",
+        "b":"true",
+        "c":"compilation error",
+        "d":"runtime error",
+        "ans":"B"
+    },
+    {
+        "id":7,
+        "q":" What will be the output of the following JavaScript code snippet?",
+        "demo":"function equalto(){ let num=10; if(num===\"10\") return true; else return false;}",
+        "a":"false",
+        "b":"true",
+        "c":"compilation error",
+        "d":"runtime error",
+        "ans":"A"
+    },
+    {
+        "id":8,
+        "q":"Will the following JavaScript code work?",
+        "demo": "var js = (function(x) {return x*x;}(10));",
+        "a":"Exception will be thrown",
+        "b":"Memory leak",
+        "c":"Error",
+        "d":"Yes, perfectly",
+        "ans":"D"
+    },
+    {
+        "id":9,
+        "q":" Which of the following is not javascript data types?",
+        "demo":"",
+        "a":"Null type",
+        "b":"Undefined type",
+        "c":"Number type",
+        "d":"All of the mentioned",
+        "ans":"D"
+    },
+    {
+        "id":10,
+        "q":" Where is Client-side JavaScript code is embedded within HTML documents?",
+        "demo":"",
+        "a":"A URL that uses the special javascript:code",
+        "b":"A URL that uses the special javascript:protocol",
+        "c":"A URL that uses the special javascript:encoding",
+        "d":"A URL that uses the special javascript:stack",
+        "ans":"B"
+    }
+]
